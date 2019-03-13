@@ -33,9 +33,9 @@ public class FireBaseCumFireStore extends AppCompatActivity
     EditText person_name,person_phone,verify_code;
     Button save_btn;
     private FirebaseAuth mAuth;
-    Button phone_authentication,confirm_btn;
+    Button phone_authentication;
 
-    String codeSent,code;
+    String codeSent;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -64,10 +64,10 @@ public class FireBaseCumFireStore extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
+                //code for autodetecting the otp with firebase
                 phoneAuthentication();
             }
         });
-
     }
     public void performData()
     {
@@ -138,6 +138,7 @@ public class FireBaseCumFireStore extends AppCompatActivity
                 //Log.e("pauth",""+phoneAuthCredential.getSmsCode());
 
                 //PhoneAuthCredential credential = PhoneAuthProvider.getCredential(codeSent, code);
+                //it is the actual code to autodetect with mobilenumber
                 signInWithPhoneAuthCredential(phoneAuthCredential);
 
             }
