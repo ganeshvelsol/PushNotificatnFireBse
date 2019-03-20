@@ -30,6 +30,7 @@ public class ImageviewToGallryStore extends AppCompatActivity
 
     public void saveImage(View v)
     {
+
         Bitmap bit= BitmapFactory.decodeResource(getResources(),R.drawable.profile);
 
 
