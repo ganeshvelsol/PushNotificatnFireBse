@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PhoneAuthentication">
+        <activity android:name=".piechart.PieChartWithArrays">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,9 +21,10 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".imageviewToGallery.ImageviewToGallryStore">
+        <activity android:name=".PhoneAuthentication">
         </activity>
-        <activity android:name=".bottomNavigation.BottomNavigationActivities"></activity>
+        <activity android:name=".imageviewToGallery.ImageviewToGallryStore"></activity>
+        <activity android:name=".bottomNavigation.BottomNavigationActivities" />
         <activity android:name=".androidMVVMExmples.MVVMExamples" />
         <activity android:name=".viewFlippers.ViewFlipperExamples" />
         <activity android:name=".firebaseWithFireStore.FireBaseCumFireStore" />
