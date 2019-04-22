@@ -30,8 +30,7 @@ import static android.Manifest.permission.CAMERA;
 public class QRCodeRelated extends AppCompatActivity //implements ZXingScannerView.ResultHandler
 {
 
-    private static final int camera_req = 1;
-    //private ZXingScannerView scannerView;
+
     Button hello_button;
 
     @Override
