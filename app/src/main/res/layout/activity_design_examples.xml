@@ -1,0 +1,141 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#BEECEFF8"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Just for checking purpose"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="15dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/design_edittext_style"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/one"
+                android:hint="person name"
+                android:background="@null"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/design_edittext_style"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/second"
+                android:hint="person number"
+                android:background="@null"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="send"
+                android:layout_margin="5dp"
+                android:background="@drawable/design_button_style"
+                android:textColor="#ffff"
+                android:layout_height="match_parent" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="receive"
+                android:layout_margin="5dp"
+                android:textColor="#ffff"
+                android:background="@drawable/design_button_style"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="4">
+            <EditText
+                android:id="@+id/one_input"
+                android:ems="1"
+                android:maxEms="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/two_input"
+                android:ems="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/three_input"
+                android:ems="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/four_input"
+                android:ems="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="#123">
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="Loading .."
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -12,7 +12,6 @@ import gif.ganesh.pushnotififirebase.R;
 public class ViewFlipperExamples extends AppCompatActivity
 {
     ViewFlipper mviewFlipper;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
