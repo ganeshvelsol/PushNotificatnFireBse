@@ -34,7 +34,8 @@ public class QRCodeRelated extends AppCompatActivity //implements ZXingScannerVi
     Button hello_button;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrcode_related);
 
@@ -52,6 +53,7 @@ public class QRCodeRelated extends AppCompatActivity //implements ZXingScannerVi
         IntentIntegrator integrator=new IntentIntegrator(this);
         integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
         integrator.setPrompt("Scan");
+
         integrator.setCameraId(0);
         integrator.setOrientationLocked(false);
         integrator.setBeepEnabled(false);
@@ -71,6 +73,11 @@ public class QRCodeRelated extends AppCompatActivity //implements ZXingScannerVi
             }else
             {
                 Toast.makeText(this, result.getContents(), Toast.LENGTH_SHORT).show();
+
+
+                Intent ss=new Intent(this,DisplayScannedTextAct.class);
+                ss.putExtra("text",""+result);
+                startActivity(ss);
             }
         }
     }
